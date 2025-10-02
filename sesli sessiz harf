@@ -4,19 +4,19 @@ char harf = 0;
 
 int main()
 {
-    printf("Bilgi almak istediginiz harfi giriniz:       \n");
+    printf("Lutfen harf  giriniz:       \n");
     scanf("%c", &harf);
 
     switch(harf)
     {
         case 'a': printf("Harfiniz sesli harftir!\n");break;
-        case 'i': printf("Harfiniz sesli harftir!\n");break;
         case 'e': printf("Harfiniz sesli harftir!\n");break;
+        case 'i': printf("Harfiniz sesli harftir!\n");break;
         case 'u': printf("Harfiniz sesli harftir!\n");break;
         case 'o': printf("Harfiniz sesli harftir!\n");break;
         case 'A': printf("Harfiniz sesli harftir!\n");break;
-        case 'I': printf("Harfiniz sesli harftir!\n");break;
         case 'E': printf("Harfiniz sesli harftir!\n");break;
+        case 'I': printf("Harfiniz sesli harftir!\n");break;
         case 'U': printf("Harfiniz sesli harftir!\n");break;
         case 'O': printf("Harfiniz sesli harftir!\n");break;
 
