@@ -1,0 +1,38 @@
+int notlar[5][4];
+float ortalama=0;
+
+for(int i = 0; i < 5; i++){
+    printf("Ogrencinin notlarini giriniz:   %d\n", i + 1);
+    for (int j = 0; j < 4; j++){
+            int gecerli = 0;
+    while(!gecerli){
+            printf("Not:   %d", j + 1);
+            scanf("%d", &notlar[i][j]);
+            if(notlar[i][j] >= 0 && notlar[i][j] <= 100){
+                gecerli = 1;
+        }
+            else {
+            printf("HATA LUTFEN 0 ILE 100 ARASINDA BIR DEGER GIRINIZ!    \n");
+            }
+    }
+    }
+}
+for(int i = 0; i < 5; i++){
+        int toplam = 0;
+    for(int j = 0; j < 5; j++){
+            toplam += notlar[i][j];
+    }
+    ortalama = toplam / 4.0;
+
+    printf("Ogrencinin not ortalamasi:    %d %2.f ->", i + 1, ortalama);
+
+    if(ortalama < 50){
+            printf("Ogrenci dersten KALDI!");
+    }
+    else {
+            printf("Ogrenci dersten GECTI!");
+    }
+}
+
+    return 0;
+}
