@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+char harf = 0;
+
+int main()
+{
+    printf("Bilgi almak istediginiz harfi giriniz:       \n");
+    scanf("%c", &harf);
+
+    switch(harf)
+    {
+        case 'a': printf("Harfiniz sesli harftir!\n");break;
+        case 'i': printf("Harfiniz sesli harftir!\n");break;
+        case 'e': printf("Harfiniz sesli harftir!\n");break;
+        case 'u': printf("Harfiniz sesli harftir!\n");break;
+        case 'o': printf("Harfiniz sesli harftir!\n");break;
+        case 'A': printf("Harfiniz sesli harftir!\n");break;
+        case 'I': printf("Harfiniz sesli harftir!\n");break;
+        case 'E': printf("Harfiniz sesli harftir!\n");break;
+        case 'U': printf("Harfiniz sesli harftir!\n");break;
+        case 'O': printf("Harfiniz sesli harftir!\n");break;
+
+        default:
+            if(harf >= 'a' && harf <= 'z')
+            {
+                printf("Harfiniz sessiz harftir!\n");
+            }
+            else if(harf >= 'A' && harf <='Z')
+            {
+                printf("Harfiniz sessiz harftir!\n");
+            }
+            else
+            {
+                printf("Lutfen gecerli bir harf giriniz!\n");
+            }
+    }
+    return 0;
+}
