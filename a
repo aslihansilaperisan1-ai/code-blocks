@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <stdlib.h>
+signed int sayi = 0;
+int deger;
+
+int main()
+{
+    printf("Bir sayi giriniz\n");
+    scanf("%d", &sayi);
+
+    if (sayi < 1)
+    {
+        printf("Lutfen 1'den buyuk bir deger giriniz!");
+    }
+    for(int deger = 1; deger <= sayi; deger++){
+        if(deger > 50)
+        {
+            break;
+        }
+        if(deger % 3==0){
+
+            continue;
+        }
+        printf("%d\n", deger);
+
+    }
+    return 0;
+}}
