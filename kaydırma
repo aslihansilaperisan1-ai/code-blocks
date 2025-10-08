@@ -1,0 +1,28 @@
+#include <stdio.h>
+#include <unistd.h>
+int sayi = 0;
+char harf= 0;
+int main() {
+
+    printf("lütfen bir harf giriniz: ");
+    scanf (" %c",&harf);
+
+    int a = 0, b = 0, da = 1,db = 1, count = 0;
+    int STEP = 50;
+
+    while (1) {
+        for (int i = 0; i < b; i++) printf(" ");
+        printf("%c\n",harf);
+        usleep(100000);
+
+        a += da;
+        b += db;
+        count++;
+
+        if (count % STEP == 0) db *= -1;
+
+        if (b < 0) b = 0;
+        if (b > 60) b = 60;
+    }
+
+}
